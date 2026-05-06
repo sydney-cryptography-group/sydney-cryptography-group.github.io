@@ -1,18 +1,8 @@
 ---
-title: "Contact"
-layout: gridlay
-excerpt: "Contact the Sydney Blockchain Centre"
-sitemap: false
+layout: page
+title: contact
 permalink: /contact/
+description:
+nav: true
+nav_order: 4
 ---
-
-# Contact
-
-**{{ site.data.site.contact_person }}**  
-[{{ site.data.site.contact_email }}](mailto:{{ site.data.site.contact_email }})
-
-## Location
-
-{% for line in site.data.site.location %}
-{{ line }}  
-{% endfor %}
