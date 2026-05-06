@@ -1,0 +1,19 @@
+name: "Sydney Blockchain Centre"
+short_name: "Sydney Blockchain Centre"
+affiliation: "The University of Sydney"
+contact_email: "jiangshan.yu@sydney.edu.au"
+contact_person: "Associate Professor Dr Jiangshan Yu"
+location:
+  - "The University of Sydney"
+  - "Sydney, NSW, Australia"
+
+homepage:
+  heading: "Sydney Blockchain Centre"
+  logo: ""
+  intro:
+    - "Building secure and resilient decentralised systems."
+    - "We strive to be a world-leading hub for blockchain innovation, fostering research that transforms how we think about digital trust, security, and decentralized systems."
+
+links:
+  - label: "University of Sydney research page"
+    url: "https://www.sydney.edu.au/engineering/our-research/research-centres-and-institutes/sydney-blockchain-group.html"

@@ -1,0 +1,25 @@
+<div id="footer" class="panel">
+  <div class="panel-footer">
+	<div class="container-fluid">
+	  <div class="row">
+		<div class="col-sm-4">
+		  <p>&copy; {{ site.time | date: "%Y" }} {{ site.data.site.short_name }}.</p>
+
+		</div>
+		<div class="col-sm-4">
+		<p>{{ site.data.site.affiliation }}</p>
+		</div>
+		<div class="col-sm-4">
+		  Contact:<br />
+		  <a href="mailto:{{ site.data.site.contact_email }}">{{ site.data.site.contact_email }}</a><br />
+		  {% for line in site.data.site.location %}
+		  {{ line }}<br />
+		  {% endfor %}
+		</div>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/bootstrap.min.js"></script>

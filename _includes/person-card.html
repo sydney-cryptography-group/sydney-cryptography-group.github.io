@@ -1,0 +1,20 @@
+<div class="col-sm-6 col-md-4 person-column">
+<article class="person-card">
+{% if person.image and person.image != "" %}
+{% assign person_image_src = person.image %}
+{% unless person_image_src contains "://" %}
+{% assign first_char = person_image_src | slice: 0 %}
+{% if first_char == "/" %}
+{% assign person_image_src = person_image_src | prepend: site.baseurl %}
+{% else %}
+{% assign person_image_src = person_image_src | prepend: "/" | prepend: site.baseurl %}
+{% endif %}
+{% endunless %}
+<img class="person-photo" src="{{ person_image_src }}" alt="{{ person.name }}">
+{% endif %}
+<h3 class="person-name">{% if person.profile and person.profile != "" %}<a href="{{ person.profile }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}{% if person.suffix and person.suffix != "" %} <span class="person-suffix">{{ person.suffix }}</span>{% endif %}</h3>
+{% if person.area and person.area != "" %}
+<p class="person-area">{{ person.area }}</p>
+{% endif %}
+</article>
+</div>
