@@ -17,7 +17,6 @@ Open `http://127.0.0.1:4000`.
 
 - About page: `_pages/about.md`
 - People page: `_pages/people.md`
-- Aravind profile content: `_pages/aravind.md`
 - Activities & Events page: `_pages/activities-events.md`
 - Alumni page: `_pages/alumni.md`
 - Contact page: `_pages/contact.md`
