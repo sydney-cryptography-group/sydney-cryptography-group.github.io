@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: scg-logo.svg
+  image: scg-logo-koala.png
   image_circular: false
   more_info:
 
