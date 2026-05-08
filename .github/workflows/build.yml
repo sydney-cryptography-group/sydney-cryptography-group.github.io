@@ -33,7 +33,7 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll build --strict_front_matter --baseurl "/${{ github.event.repository.name }}"
+        run: bundle exec jekyll build --strict_front_matter --baseurl ""
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

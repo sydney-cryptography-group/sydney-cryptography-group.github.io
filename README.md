@@ -26,4 +26,4 @@ Do not edit `_site`; it is generated.
 
 ## Publishing
 
-This private repository deploys to GitHub Pages from GitHub Actions.
+This repository deploys to GitHub Pages from GitHub Actions.
