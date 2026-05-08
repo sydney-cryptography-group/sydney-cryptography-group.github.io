@@ -22,4 +22,4 @@ latest_posts:
   enabled: false
 ---
 
-Sydney Cryptography Group.
+Sydney Cryptography Lab (SyCrypt).

@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Sydney Cryptography Group # the website title (if blank, full name will be used instead)
+title: Sydney Cryptography Lab # the website title (if blank, full name will be used instead)
 first_name:
 middle_name:
 last_name:
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Website for the Sydney Cryptography Group.
+  Website for the Sydney Cryptography Lab (SyCrypt).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -16,7 +16,7 @@ keywords: cryptography, academic-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: scg-logo-koala.png # the favicon image in /assets/img/
 
-url: https://sydney-cryptography-group.github.io # the base hostname & protocol for your site
+url: https://ezepze.github.io # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -89,7 +89,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Sydney Cryptography Group # blog_name will be displayed in your blog page
+blog_name: Sydney Cryptography Lab # blog_name will be displayed in your blog page
 blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts

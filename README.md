@@ -1,4 +1,4 @@
-# Sydney Cryptography Group Website
+# Sydney Cryptography Lab Website
 
 This site uses the al-folio Jekyll template and is configured for GitHub Pages.
 
@@ -26,6 +26,4 @@ Do not edit `_site`; it is generated.
 
 ## Publishing
 
-The editable source repository is private. The public GitHub Pages site is published from `sydney-cryptography-group/sydney-cryptography-group.github.io`.
-
-The source repository currently runs a build check only. Automatic publishing from this private repository needs an approved publish token or a paid GitHub plan that supports Pages from private repositories.
+This private repository deploys to GitHub Pages from GitHub Actions.

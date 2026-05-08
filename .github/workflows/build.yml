@@ -1,4 +1,4 @@
-name: Build
+name: Build and Deploy
 
 on:
   pull_request:
@@ -9,6 +9,12 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -17,6 +23,9 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v6
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -24,4 +33,21 @@ jobs:
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll build --strict_front_matter
+        run: bundle exec jekyll build --strict_front_matter --baseurl "/${{ github.event.repository.name }}"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: _site
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5
