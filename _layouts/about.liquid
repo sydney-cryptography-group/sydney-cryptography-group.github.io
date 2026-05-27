@@ -48,6 +48,15 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Funders -->
+    {% if page.funders %}
+      <h2>
+        <a href="{{ '/funders/' | relative_url }}" style="color: inherit">funders</a>
+      </h2>
+      <p>Our research has been supported fully or in part by several generous grants from:</p>
+      {% include funders.liquid %}
+    {% endif %}
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>

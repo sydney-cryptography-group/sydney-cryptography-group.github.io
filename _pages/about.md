@@ -4,14 +4,15 @@ title: about
 permalink: /
 subtitle:
 
-profile:
-  align: right
-  image: scg-logo-koala.png
-  image_circular: false
-  more_info:
+# profile:
+#   align: right
+#   image: scg-logo-koala.png
+#   image_circular: false
+#   more_info:
 
 selected_papers: false
 social: false
+funders: true
 
 announcements:
   enabled: true
@@ -22,4 +23,15 @@ latest_posts:
   enabled: false
 ---
 
-Sydney Cryptography Lab (SyCrypt).
+Welcome to the homepage for Sydney Cryptography (SyCrypt) Group in the [School of Computer Science](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) at the [University of Sydney](https://www.sydney.edu.au/). 
+
+<div style="float:right; margin:0 0 1rem 2rem;">
+  <img src="/assets/img/scg-logo-koala.png" alt="SyCrypt Group" style="max-width:180px;">
+</div>
+
+SyCrypt Group studies a great range of problems in theoretical, applied, classical, post-quantum and distributed cryptography. 
+Our work covers
+- fundamental cryptographic primitives and their application in blockchain;
+- fairness in multi-party computation;
+- privacy-preserving applications; 
+- game-theoretic mechanism design for decentralized applications.
