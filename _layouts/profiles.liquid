@@ -26,6 +26,8 @@ layout: page
           {% if profile.content %}
             {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
             {{ profile_content | markdownify }}
+          {% elsif profile.text %}
+            {{ profile.text | markdownify }}
           {% else %}
             {{ content }}
           {% endif %}
