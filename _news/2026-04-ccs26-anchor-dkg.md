@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2026-04
+month: 2026-04
 inline: true
 ---
 
