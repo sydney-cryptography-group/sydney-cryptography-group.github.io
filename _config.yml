@@ -2,13 +2,13 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Sydney Cryptography Lab # the website title (if blank, full name will be used instead)
+title: Sydney Cryptography Group # the website title (if blank, full name will be used instead)
 first_name:
 middle_name:
 last_name:
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Website for the Sydney Cryptography Lab (SyCrypt).
+  Website for the Sydney Cryptography (SyCrypt) Group.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -89,7 +89,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Sydney Cryptography Lab # blog_name will be displayed in your blog page
+blog_name: Sydney Cryptography Group # blog_name will be displayed in your blog page
 blog_description:
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
@@ -187,8 +187,8 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - _pages/aravind.md
+  - _pages/qiang.md
   - Makefile
   - purgecss.config.js
   - README.md

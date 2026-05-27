@@ -1,12 +1,25 @@
-RUBY_PATH := /opt/homebrew/opt/ruby@3.3/bin:/opt/homebrew/lib/ruby/gems/3.3.0/bin:$(PATH)
+.PHONY: setup build serve dev check-ruby
 
-.PHONY: setup build serve
+JEKYLL_FLAGS ?=
 
-setup:
-	@PATH="$(RUBY_PATH)" bundle install
+check-ruby:
+	@test -n "$(RUBY_PATH)" || { \
+		echo "Error: RUBY_PATH is not set."; \
+		echo "Usage: make <target> RUBY_PATH=<ruby-bin-dir>"; \
+		echo "  macOS/Homebrew: RUBY_PATH=\$$(brew --prefix ruby@3.3)/bin"; \
+		echo "  rbenv:          RUBY_PATH=\$$HOME/.rbenv/bin:\$$HOME/.rbenv/shims"; \
+		exit 1; \
+	}
 
-build:
-	@PATH="$(RUBY_PATH)" bundle exec jekyll build --strict_front_matter
+setup: check-ruby
+	@PATH="$(RUBY_PATH):$(PATH)" bundle install
 
-serve:
-	@PATH="$(RUBY_PATH)" bundle exec jekyll serve --host 127.0.0.1 --port 4000
+build: check-ruby
+	@PATH="$(RUBY_PATH):$(PATH)" bundle exec jekyll build --incremental --strict_front_matter $(JEKYLL_FLAGS)
+
+serve: check-ruby
+	@PATH="$(RUBY_PATH):$(PATH)" bundle exec jekyll serve --host 127.0.0.1 --port 4000 --incremental --skip-initial-build $(JEKYLL_FLAGS)
+
+# Fast local dev: builds+serves in one step, no file watching
+dev: check-ruby
+	@PATH="$(RUBY_PATH):$(PATH)" bundle exec jekyll serve --host 127.0.0.1 --port 4000 --incremental --no-watch $(JEKYLL_FLAGS)

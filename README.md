@@ -1,4 +1,4 @@
-# Sydney Cryptography Lab Website
+# Sydney Cryptography Group Website
 
 This site uses the al-folio Jekyll template and is configured for GitHub Pages.
 
