@@ -46,6 +46,7 @@ layout: default
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
+      <a href="{{ '/news/' | relative_url }}">[All News]</a>
     {% endif %}
 
     <!-- Funders -->
@@ -71,6 +72,7 @@ layout: default
         <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
+      <a href="{{ '/publications/' | relative_url }}">[All Publications]</a>
     {% endif %}
 
     <!-- Social -->
