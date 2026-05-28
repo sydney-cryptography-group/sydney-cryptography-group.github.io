@@ -26,7 +26,7 @@ latest_posts:
 Welcome to the homepage for Sydney Cryptography (SyCrypt) Group in the [School of Computer Science](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) at the [University of Sydney](https://www.sydney.edu.au/). 
 
 <div style="float:right; margin:0 0 1rem 2rem;">
-  <img src="/assets/img/scg-logo-koala.png" alt="SyCrypt Group" style="max-width:180px;">
+  <img src="/assets/img/scg-logo-koala.png" alt="SyCrypt Group" style="width:420px; max-width:100%;">
 </div>
 
 SyCrypt Group studies a great range of problems in theoretical and applied cryptography. 
