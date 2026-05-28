@@ -1,10 +1,10 @@
 ---
 layout: page
-title: alumni
+title: Alumni
 permalink: /alumni/
 description:
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 ## 2026

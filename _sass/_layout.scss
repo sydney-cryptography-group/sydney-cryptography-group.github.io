@@ -40,6 +40,39 @@ body.sticky-bottom-footer {
   }
 }
 
+// People grid
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.5rem 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.person-card {
+  text-align: center;
+
+  .person-photo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    margin: 0 auto 0.6rem;
+    display: block;
+  }
+
+  .person-info {
+    font-size: 0.875rem;
+    line-height: 1.35;
+
+    a {
+      font-weight: 500;
+    }
+
+    .person-role {
+      color: var(--global-text-color-light, #6c757d);
+    }
+  }
+}
+
 // Content layout uses Bootstrap's grid system with responsive columns
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
 // See _layouts/default.liquid and _includes/projects.liquid for examples

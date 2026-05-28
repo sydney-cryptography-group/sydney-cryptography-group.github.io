@@ -1,0 +1,34 @@
+---
+layout: page
+---
+<div class="post">
+  <article>
+    {% for section in page.sections %}
+      <h2>{{ section.title }}</h2>
+      <div class="people-grid">
+        {% for person in section.people %}
+          <div class="person-card">
+            {% assign img_path = person.image | prepend: 'assets/img/' %}
+            <img
+              src="{{ img_path | relative_url }}"
+              class="rounded-circle person-photo"
+              alt="{{ person.name }}"
+              loading="lazy"
+              onerror="this.src='{{ 'assets/img/people/placeholder.svg' | relative_url }}';"
+            >
+            <div class="person-info">
+              {% if person.url %}
+                <a href="{{ person.url }}" target="_blank" rel="noopener noreferrer">{{ person.name }}</a>
+              {% else %}
+                <span>{{ person.name }}</span>
+              {% endif %}
+              {% if person.role %}
+                <br><small class="person-role">{{ person.role }}</small>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </article>
+</div>

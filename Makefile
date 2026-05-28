@@ -15,10 +15,10 @@ setup: check-ruby
 	@PATH="$(RUBY_PATH):$(PATH)" bundle install
 
 build: check-ruby
-	@PATH="$(RUBY_PATH):$(PATH)" bundle exec jekyll build --incremental --strict_front_matter $(JEKYLL_FLAGS)
+	@PATH="$(RUBY_PATH):$(PATH)" bundle exec jekyll build --strict_front_matter $(JEKYLL_FLAGS)
 
 serve: check-ruby
-	@PATH="$(RUBY_PATH):$(PATH)" bundle exec jekyll serve --host 127.0.0.1 --port 4000 --incremental --skip-initial-build $(JEKYLL_FLAGS)
+	@PATH="$(RUBY_PATH):$(PATH)" bundle exec jekyll serve --host 127.0.0.1 --port 4000 --skip-initial-build $(JEKYLL_FLAGS)
 
 # Fast local dev: builds+serves in one step, no file watching
 dev: check-ruby

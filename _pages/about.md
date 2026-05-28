@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle:
 
@@ -10,7 +10,7 @@ subtitle:
 #   image_circular: false
 #   more_info:
 
-selected_papers: false
+selected_papers: true
 social: false
 funders: true
 
@@ -29,9 +29,11 @@ Welcome to the homepage for Sydney Cryptography (SyCrypt) Group in the [School o
   <img src="/assets/img/scg-logo-koala.png" alt="SyCrypt Group" style="max-width:180px;">
 </div>
 
-SyCrypt Group studies a great range of problems in theoretical, applied, classical, post-quantum and distributed cryptography. 
+SyCrypt Group studies a great range of problems in theoretical and applied cryptography. 
 Our work covers
 - fundamental cryptographic primitives and their application in blockchain;
+- post-quantum cryptography and its applications;
+- distributed cryptography and protocols;
 - fairness in multi-party computation;
 - privacy-preserving applications; 
 - game-theoretic mechanism design for decentralized applications.

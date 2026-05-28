@@ -1,6 +1,6 @@
 ---
 layout: page
-title: funders
+title: Funders
 permalink: /funders/
 nav: false
 ---
