@@ -12,7 +12,7 @@ subtitle:
 
 selected_papers: true
 social: false
-funders: true
+grants: true
 
 announcements:
   enabled: true

@@ -12,7 +12,7 @@ Use pull requests for content changes before publishing.
 - Events page: `_pages/events.md`
 - Alumni page: `_pages/alumni.md`
 - Contact page: `_pages/contact.md`
-- Funders page: `_pages/funders.md`
+- Grants page: `_pages/grants.md`
 - News page: `_pages/news.md`
 - Publications page: `_pages/publications.md`
 

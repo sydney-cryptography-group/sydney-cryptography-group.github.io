@@ -23,7 +23,7 @@ Open `http://127.0.0.1:4000`.
 - Events page: `_pages/events.md`
 - Alumni page: `_pages/alumni.md`
 - Contact page: `_pages/contact.md`
-- Funders page: `_pages/funders.md`
+- Grants page: `_pages/grants.md`
 - News items: `_news/`
 - Publications (BibTeX): `_bibliography/papers.bib`
 

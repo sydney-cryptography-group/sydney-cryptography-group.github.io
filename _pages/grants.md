@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Funders
-permalink: /funders/
+title: Grants
+permalink: /grants/
 nav: false
 ---
 
 Our research has been supported fully or in part by several generous grants from:
 
-{% include funders.liquid %}
+{% include grants.liquid %}
