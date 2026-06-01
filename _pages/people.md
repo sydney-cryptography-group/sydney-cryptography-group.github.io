@@ -64,7 +64,8 @@ sections:
         image: people/placeholder.svg
         affiliation: University of Utah
         dates: May 2026 - July 2026
-      - name: Siddesh Umarjee
+      - name: Siddhesh Umarjee
+        url: "https://www.linkedin.com/in/siddhesh-umarjee-a685ab280"
         image: people/placeholder.svg
         affiliation: IIT Gandhinagar
         dates: May 2026 - July 2026
