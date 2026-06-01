@@ -28,6 +28,7 @@ sections:
       - name: Tiancheng Mai
         url: "https://scholar.google.com/citations?user=Wa0UF7UAAAAJ&hl=en"
         image: people/placeholder.svg
+        role: aka Michael
       - name: Yuchen Ye
         url: "https://www.linkedin.com/in/yuchen-ye-b51347247/"
         image: people/placeholder.svg
