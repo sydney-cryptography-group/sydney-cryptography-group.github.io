@@ -21,21 +21,27 @@ sections:
         url: "https://yananli117.github.io/"
         image: people/placeholder.svg
       - name: Jiajun Xin
+        url: "https://jiajunxin.github.io/"
         image: people/placeholder.svg
   - title: Ph.D. Students
     people:
       - name: Tiancheng Mai
+        url: "https://scholar.google.com/citations?user=Wa0UF7UAAAAJ&hl=en"
         image: people/placeholder.svg
       - name: Yuchen Ye
+        url: "https://www.linkedin.com/in/yuchen-ye-b51347247/"
         image: people/placeholder.svg
       - name: Omniyyah Ibrahim
+        url: "https://scholar.google.com/citations?user=HUI-w0YAAAAJ&hl=en"
         image: people/placeholder.svg
       - name: Xinrui Zhang
+        url: "https://www.linkedin.com/in/xinrui-zhangxr/"
         image: people/placeholder.svg
       - name: Sam Polgar
         url: "https://www.sampolgar.com/"
         image: people/placeholder.svg
       - name: Jay Taylor
+        url: "https://www.linkedin.com/in/jay-taylor-087aab19b/"
         image: people/placeholder.svg
       - name: Chengcong Hu
         image: people/placeholder.svg
@@ -46,6 +52,7 @@ sections:
   - title: M.Phil. Students
     people:
       - name: Feiyang Liu
+        url: "https://www.linkedin.com/in/liu-feiyang-94897a257"
         image: people/placeholder.svg
       - name: Liejun Ma
         image: people/placeholder.svg
@@ -53,6 +60,7 @@ sections:
   - title: Visitors
     people:
       - name: Garrett Greiner
+        url: "https://glgreiner.github.io/"
         image: people/placeholder.svg
         affiliation: University of Utah
         dates: May 2026 - July 2026
