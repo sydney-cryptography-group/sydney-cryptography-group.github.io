@@ -1,6 +1,8 @@
 ---
 ---
-<div class="row">
+{% assign pub_themes = entry.theme | default: '' | downcase | replace: ' ', '' %}
+
+<div class="row pub-item" data-themes="{{ pub_themes }}">
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
@@ -186,6 +188,34 @@
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
+
+    {% if entry.theme %}
+      <div class="pub-theme-badges">
+        {% assign themes = entry.theme | split: ',' %}
+        {% for theme in themes %}
+          {% assign slug = theme | strip | downcase %}
+
+          {% case slug %}
+            {% when 'threshold' %}
+              {% assign label = 'Threshold Cryptography' %}
+            {% when 'consensus' %}
+              {% assign label = 'Byzantine Consensus' %}
+            {% when 'blockchain' %}
+              {% assign label = 'Blockchain & Payments' %}
+            {% when 'privacy' %}
+              {% assign label = 'Privacy' %}
+            {% when 'fairness' %}
+              {% assign label = 'Fairness' %}
+            {% when 'foundations' %}
+              {% assign label = 'Crypto Foundations' %}
+            {% else %}
+              {% assign label = slug %}
+          {% endcase %}
+
+          <span class="pub-theme-badge">{{ label }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">
