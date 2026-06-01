@@ -20,43 +20,44 @@ sections:
       - name: Ya-Nan Li
         url: "https://yananli117.github.io/"
         image: people/placeholder.svg
-        role: Postdoctoral Researcher
       - name: Jiajun Xin
         image: people/placeholder.svg
-        role: Postdoctoral Researcher
   - title: Ph.D. Students
     people:
       - name: Tiancheng Mai
         image: people/placeholder.svg
-        role: Ph.D. Student
       - name: Yuchen Ye
         image: people/placeholder.svg
-        role: Ph.D. Student
       - name: Omniyyah Ibrahim
         image: people/placeholder.svg
-        role: Ph.D. Student
       - name: Xinrui Zhang
         image: people/placeholder.svg
-        role: Ph.D. Student
       - name: Sam Polgar
         url: "https://www.sampolgar.com/"
         image: people/placeholder.svg
-        role: Ph.D. Student
       - name: Jay Taylor
         image: people/placeholder.svg
-        role: Ph.D. Student
       - name: Chengcong Hu
         image: people/placeholder.svg
-        role: Ph.D. Student (incoming from USTC)
+        role: Incoming from USTC
       - name: Yaqing Song
         image: people/placeholder.svg
-        role: Ph.D. Student (incoming from UESTC)
+        role: Incoming from UESTC
   - title: M.Phil. Students
     people:
       - name: Feiyang Liu
         image: people/placeholder.svg
-        role: M.Phil. Student
       - name: Liejun Ma
         image: people/placeholder.svg
-        role: M.Phil. Student (incoming from Tsinghua)
+        role: Incoming from Tsinghua
+  - title: Visitors
+    people:
+      - name: Garrett Greiner
+        image: people/placeholder.svg
+        affiliation: University of Utah
+        dates: May 2026 - July 2026
+      - name: Siddesh Umarjee
+        image: people/placeholder.svg
+        affiliation: IIT Gandhinagar
+        dates: May 2026 - July 2026
 ---
