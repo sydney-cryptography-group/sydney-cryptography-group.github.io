@@ -25,6 +25,12 @@ layout: page
               {% if person.role %}
                 <br><small class="person-role">{{ person.role }}</small>
               {% endif %}
+              {% if person.affiliation %}
+                <br><small class="person-role">{{ person.affiliation }}</small>
+              {% endif %}
+              {% if person.dates %}
+                <br><small class="person-role">{{ person.dates }}</small>
+              {% endif %}
             </div>
           </div>
         {% endfor %}
