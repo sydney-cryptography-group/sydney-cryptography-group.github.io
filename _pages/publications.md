@@ -7,6 +7,8 @@ nav: true
 nav_order: 3
 ---
 
+{% include bib_search.liquid %}
+
 <div class="pub-theme-tabs">
   <button class="pub-theme-tab active" data-theme-filter="all">All</button>
   <button class="pub-theme-tab" data-theme-filter="threshold">Threshold Cryptography</button>
@@ -90,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateYearVisibility() {
     document.querySelectorAll("ol.bibliography").forEach(function (list) {
       const hasVisiblePapers = Array.from(list.children).some(function (item) {
-        return !item.classList.contains("pub-hidden");
+        return !item.classList.contains("pub-hidden") && !item.classList.contains("unloaded");
       });
 
       list.classList.toggle("pub-hidden", !hasVisiblePapers);
@@ -133,12 +135,15 @@ document.addEventListener("DOMContentLoaded", function () {
   tabs.forEach(function (tab) {
     tab.addEventListener("click", function () {
       const theme = tab.dataset.themeFilter;
-      filterPublications(theme);
+      const isAlreadyActive = tab.classList.contains("active");
+      const newTheme = (isAlreadyActive && theme !== "all") ? "all" : theme;
 
-      if (theme === "all") {
+      filterPublications(newTheme);
+
+      if (newTheme === "all") {
         history.replaceState(null, "", "#all");
       } else {
-        history.replaceState(null, "", "#" + theme);
+        history.replaceState(null, "", "#" + newTheme);
       }
     });
   });

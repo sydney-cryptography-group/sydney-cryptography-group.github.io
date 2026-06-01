@@ -31,10 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
       while (iterator && iterator.tagName !== "H2") {
         if (iterator.tagName === "OL") {
           const ol = iterator;
-          const unloadedSiblings = ol.querySelectorAll(":scope > li.unloaded");
-          const totalSiblings = ol.querySelectorAll(":scope > li");
+          const visibleSiblings = ol.querySelectorAll(":scope > li:not(.unloaded):not(.pub-hidden)");
 
-          if (unloadedSiblings.length === totalSiblings.length) {
+          if (visibleSiblings.length === 0) {
             ol.previousElementSibling.classList.add("unloaded"); // Add the '.unloaded' class to the previous grouping element (e.g. year)
             ol.classList.add("unloaded"); // Add the '.unloaded' class to the OL itself
           } else {
