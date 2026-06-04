@@ -5,7 +5,7 @@
 title: Sydney Cryptography Group # the website title (if blank, full name will be used instead)
 first_name:
 middle_name:
-last_name:
+last_name: Sydney Cryptography Group
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Website for the Sydney Cryptography (SyCrypt) Group.
