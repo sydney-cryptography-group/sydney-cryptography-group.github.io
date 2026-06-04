@@ -2,6 +2,7 @@
 layout: page
 title: Grant Support
 permalink: /grants/
+sitemap: false
 nav: false
 ---
 
