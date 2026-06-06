@@ -19,19 +19,19 @@ sections:
     people:
       - name: Ya-Nan Li
         url: "https://yananli117.github.io/"
-        image: people/placeholder.svg
+        image: people/ya-nan.jpg
       - name: Jiajun Xin
         url: "https://jiajunxin.github.io/"
-        image: people/placeholder.svg
+        image: people/jiajun.jpg
   - title: Ph.D. Students
     people:
       - name: Tiancheng Mai
         url: "https://scholar.google.com/citations?user=Wa0UF7UAAAAJ&hl=en"
-        image: people/placeholder.svg
+        image: people/tiancheng.jpg
         role: aka Michael
       - name: Yuchen Ye
         url: "https://www.linkedin.com/in/yuchen-ye-b51347247/"
-        image: people/placeholder.svg
+        image: people/yuchen.jpg
       - name: Omniyyah Ibrahim
         url: "https://scholar.google.com/citations?user=HUI-w0YAAAAJ&hl=en"
         image: people/placeholder.svg
