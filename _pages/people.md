@@ -43,7 +43,7 @@ sections:
         image: people/sam.jpg
       - name: Jay Taylor
         url: "https://www.linkedin.com/in/jay-taylor-087aab19b/"
-        image: people/placeholder.svg
+        image: people/jay.jpg
       - name: Chengcong Hu
         image: people/placeholder.svg
         role: Incoming from USTC
