@@ -37,10 +37,10 @@ sections:
         image: people/placeholder.svg
       - name: Xinrui Zhang
         url: "https://www.linkedin.com/in/xinrui-zhangxr/"
-        image: people/placeholder.svg
+        image: people/xinrui.jpg
       - name: Sam Polgar
         url: "https://www.sampolgar.com/"
-        image: people/placeholder.svg
+        image: people/sam.jpg
       - name: Jay Taylor
         url: "https://www.linkedin.com/in/jay-taylor-087aab19b/"
         image: people/placeholder.svg
@@ -54,7 +54,7 @@ sections:
     people:
       - name: Feiyang Liu
         url: "https://www.linkedin.com/in/liu-feiyang-94897a257"
-        image: people/placeholder.svg
+        image: people/feiyang.jpg
       - name: Liejun Ma
         image: people/placeholder.svg
         role: Incoming from Tsinghua
