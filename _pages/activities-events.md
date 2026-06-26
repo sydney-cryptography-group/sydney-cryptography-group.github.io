@@ -77,6 +77,6 @@ Attendance is **free**, but registration is required by **26 July 2026**.
 <iframe
   title="2026 Sydney Uni Cryptography School registration form"
   src="https://docs.google.com/forms/d/e/1FAIpQLSdYQfpjdq58rxhEx4TQpTmSbinAXioDHB9omPs4a7hiYMP8pg/viewform?embedded=true"
-  width="100%" height="3000" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">
+  width="100%" height="3500" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">
   Loading the registration form&hellip;
 </iframe>
