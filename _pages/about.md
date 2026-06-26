@@ -14,6 +14,14 @@ selected_papers: true
 social: false
 grants: true
 
+# Temporary event banner shown above the page title. Remove this block
+# (or set enabled: false) once the event has passed.
+event_banner:
+  enabled: true
+  tag: NEW
+  text: "Please check our August one-day event — 2026 Sydney Uni Cryptography School!"
+  url: /activities-events/
+
 announcements:
   enabled: true
   scrollable: false
@@ -26,7 +34,7 @@ latest_posts:
 Welcome to the homepage for Sydney Cryptography (SyCrypt) Group in the [School of Computer Science](https://www.sydney.edu.au/engineering/schools/school-of-computer-science.html) at the [University of Sydney](https://www.sydney.edu.au/). 
 
 <div style="float:right; margin:0 0 1rem 2rem;">
-  <img src="/assets/img/scg-logo-koala.png" alt="SyCrypt Group" style="width:420px; max-width:100%;">
+  <img src="/assets/img/scg-logo-koala.svg" alt="SyCrypt Group" style="width:420px; max-width:100%;">
 </div>
 
 SyCrypt Group studies a great range of problems in theoretical and applied cryptography. 
