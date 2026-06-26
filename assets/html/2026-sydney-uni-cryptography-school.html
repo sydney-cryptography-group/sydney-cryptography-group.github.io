@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2026 Sydney Uni Cryptography School Flyer</title>
+    <style>
+      :root {
+        --navy: #061f4b;
+        --navy-2: #0a2a66;
+        --blue: #8ec8e8;
+        --gold: #d5a321;
+        --ink: #111318;
+        --muted: #4c5565;
+        --rule: #d8dde6;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        margin: 0;
+        min-height: 1754px;
+        background: #fff;
+      }
+
+      body {
+        margin: 0;
+        min-height: 1754px;
+        display: block;
+        background: #fff;
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .sheet {
+        width: 1240px;
+        height: 1754px;
+        background: #fff;
+        display: grid;
+        grid-template-columns: 410px 1fr;
+        overflow: hidden;
+        box-shadow: none;
+      }
+
+      /* When opened directly in a browser tab (not embedded in the activities
+         page iframe), present the fixed-size poster as a centred sheet on a
+         neutral backdrop. Without this, zooming out / a wide window exposes the
+         page background around the 1240px poster. The .standalone class is added
+         by the script at the end of <body>, only for the top-level window. */
+      html.standalone,
+      html.standalone body {
+        background: #dfe3ea;
+      }
+
+      html.standalone body {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 32px 16px;
+      }
+
+      html.standalone .sheet {
+        box-shadow: 0 12px 40px rgba(4, 16, 40, 0.28);
+      }
+
+      .sidebar {
+        background: linear-gradient(180deg, #041a41 0%, #08275e 100%);
+        color: #fff;
+        padding: 68px 56px 62px;
+        display: flex;
+        flex-direction: column;
+        min-height: 1754px;
+      }
+
+      .sidebar-logo {
+        width: 238px;
+        display: block;
+        margin: 0 auto 34px;
+      }
+
+      .sidebar-rule {
+        height: 2px;
+        background: rgba(255, 255, 255, 0.72);
+        margin-bottom: 34px;
+      }
+
+      .side-section {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+        padding: 0 0 34px;
+        margin-bottom: 34px;
+      }
+
+      .side-section:last-child {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .side-label {
+        color: #fff;
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 850;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 14px;
+      }
+
+      .date-day {
+        font-size: 108px;
+        line-height: 0.82;
+        font-weight: 900;
+        margin: 8px 0 18px;
+      }
+
+      .date-month,
+      .date-year {
+        font-size: 39px;
+        line-height: 1.03;
+        font-weight: 850;
+        text-transform: uppercase;
+      }
+
+      .side-copy {
+        font-size: 23px;
+        line-height: 1.22;
+        font-weight: 720;
+      }
+
+      .side-copy strong {
+        font-size: 26px;
+        line-height: 1.12;
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .side-copy.plain strong {
+        display: inline;
+        margin-bottom: 0;
+      }
+
+      .side-icon-row {
+        display: grid;
+        grid-template-columns: 44px 1fr;
+        gap: 20px;
+        align-items: start;
+      }
+
+      .side-icon {
+        width: 38px;
+        height: 38px;
+        margin-top: 2px;
+        color: #fff;
+        stroke: currentColor;
+      }
+
+      .gold {
+        color: var(--gold);
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .no-divider {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .qr-card {
+        margin-top: 22px;
+        padding-bottom: 0;
+      }
+
+      .qr-link {
+        color: inherit;
+        display: inline-block;
+        text-decoration: none;
+      }
+
+      .qr-card img,
+      .qr-card svg {
+        display: block;
+        width: 214px;
+        height: 214px;
+        margin: 0 0 18px;
+      }
+
+      .qr-note {
+        color: #fff;
+        font-size: 22px;
+        line-height: 1.25;
+        font-weight: 700;
+        max-width: 290px;
+      }
+
+      .registration-callout {
+        font-size: 29px;
+        line-height: 1.12;
+      }
+
+      .main {
+        padding: 82px 58px 86px 54px;
+        display: flex;
+        flex-direction: column;
+        min-height: 1754px;
+      }
+
+      .group {
+        color: var(--navy);
+        font-size: 21px;
+        line-height: 1;
+        font-weight: 760;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-top: 4px;
+      }
+
+      .top-rule {
+        height: 3px;
+        background: var(--navy);
+        width: 100%;
+        margin: 22px 0 38px;
+      }
+
+      h1 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 68px;
+        line-height: 1;
+        letter-spacing: -0.015em;
+        font-weight: 500;
+        max-width: 650px;
+        margin: 0;
+      }
+
+      .dek {
+        font-size: 22px;
+        line-height: 1.42;
+        max-width: 680px;
+        margin: 28px 0 32px;
+        color: #2e3440;
+      }
+
+      .section-rule {
+        height: 3px;
+        background: var(--navy);
+        margin: 0 0 30px;
+      }
+
+      .section {
+        margin-top: 38px;
+        padding-top: 0;
+      }
+
+      .section-title {
+        color: var(--navy);
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 820;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin: 0 0 30px;
+      }
+
+      .schedule {
+        border-bottom: 1px solid var(--rule);
+      }
+
+      .schedule-row {
+        display: grid;
+        grid-template-columns: 190px 1fr;
+        gap: 28px;
+        border-top: 1px solid var(--rule);
+        padding: 30px 0 30px;
+      }
+
+      .schedule-row:first-child {
+        border-top: 0;
+        padding-top: 0;
+      }
+
+      .time {
+        color: var(--navy);
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 850;
+        white-space: nowrap;
+      }
+
+      .session-name {
+        color: #111318;
+        font-size: 23px;
+        line-height: 1;
+        font-weight: 820;
+        margin-bottom: 10px;
+      }
+
+      .session-detail {
+        color: #232936;
+        font-size: 21px;
+        line-height: 1.35;
+        max-width: 430px;
+      }
+
+      .audience-block {
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        gap: 28px;
+        align-items: start;
+        padding-bottom: 38px;
+        border-bottom: 3px solid var(--navy);
+      }
+
+      .people-icon {
+        width: 56px;
+        height: 56px;
+        color: var(--navy);
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .audience-heading {
+        color: var(--navy);
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 850;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .body-copy {
+        color: #1f2530;
+        font-size: 22px;
+        line-height: 1.4;
+        max-width: 690px;
+      }
+
+      .background-block {
+        padding-bottom: 38px;
+        border-bottom: 3px solid var(--navy);
+      }
+
+      .background-copy {
+        color: #1f2530;
+        font-size: 21px;
+        line-height: 1.38;
+        max-width: 710px;
+        margin: 0;
+      }
+
+      .topics {
+        margin-top: 42px;
+      }
+
+      .topics ul {
+        margin: 0;
+        padding-left: 26px;
+        color: #141923;
+        font-size: 22px;
+        line-height: 1.45;
+      }
+
+      .topics li + li {
+        margin-top: 12px;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      @media print {
+        html,
+        body,
+        html.standalone,
+        html.standalone body {
+          width: 210mm;
+          height: 297mm;
+          min-height: 297mm;
+          background: #fff;
+        }
+
+        body,
+        html.standalone body {
+          display: block;
+          overflow: hidden;
+          padding: 0;
+        }
+
+        .sheet,
+        html.standalone .sheet {
+          width: 1240px;
+          height: 1754px;
+          zoom: 0.64;
+          box-shadow: none;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <main class="sheet" aria-label="2026 Sydney Uni Cryptography School flyer">
+      <aside class="sidebar">
+        <img class="sidebar-logo" src="/assets/img/scg-logo-flyer-clean.png" alt="Sydney Cryptography Group logo">
+
+        <section class="side-section">
+          <div class="side-label">Friday</div>
+          <div class="date-day">7</div>
+          <div class="date-month">August</div>
+          <div class="date-year">2026</div>
+        </section>
+
+        <section class="side-section">
+          <div class="side-icon-row">
+            <svg class="side-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <path d="M32 58s18-17 18-34a18 18 0 1 0-36 0c0 17 18 34 18 34z" stroke-width="5" stroke-linejoin="round"></path>
+              <circle cx="32" cy="24" r="6" fill="currentColor" stroke="none"></circle>
+            </svg>
+            <div class="side-copy plain">
+              <strong>J12 Boardroom 124,</strong><br>
+              School of Computer Science,<br>
+              University of Sydney
+            </div>
+          </div>
+        </section>
+
+        <section class="side-section">
+          <div class="side-icon-row">
+            <svg class="side-icon" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+              <rect x="10" y="14" width="44" height="40" rx="4" stroke-width="4"></rect>
+              <path d="M20 8v12M44 8v12M10 26h44" stroke-width="4" stroke-linecap="round"></path>
+              <path d="M20 35h6M32 35h6M44 35h2M20 44h6M32 44h6M44 44h2" stroke-width="4" stroke-linecap="round"></path>
+            </svg>
+            <div>
+              <div class="side-label">Register by</div>
+              <div class="side-copy"><strong>26 JULY 2026</strong></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="side-section no-divider">
+          <div class="side-copy gold registration-callout">Free registration required</div>
+        </section>
+
+        <section class="qr-card">
+          <a class="qr-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdYQfpjdq58rxhEx4TQpTmSbinAXioDHB9omPs4a7hiYMP8pg/viewform?usp=send_form" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" role="img" aria-label="QR code for the registration form"><g transform="scale(10)"><path fill="#fff" d="M0 0h51v51h-51z"/><path class="qrline" stroke="#061f4b" d="M3 3.5h7m4 0h2m1 0h1m1 0h5m5 0h6m4 0h1m1 0h7m-45 1h1m5 0h1m3 0h1m5 0h1m4 0h2m2 0h7m3 0h1m2 0h1m5 0h1m-45 1h1m1 0h3m1 0h1m5 0h2m5 0h1m1 0h2m4 0h1m1 0h2m1 0h1m2 0h1m2 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m5 0h2m3 0h1m2 0h2m2 0h4m7 0h2m1 0h1m1 0h3m1 0h1m-45 1h1m1 0h3m1 0h1m4 0h1m3 0h2m3 0h5m1 0h2m1 0h2m1 0h5m1 0h1m1 0h3m1 0h1m-45 1h1m5 0h1m1 0h4m1 0h8m3 0h2m1 0h1m2 0h1m1 0h1m5 0h1m5 0h1m-45 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-36 1h1m3 0h1m1 0h1m1 0h4m3 0h4m2 0h1m1 0h1m1 0h1m-35 1h1m2 0h1m1 0h2m1 0h1m1 0h1m1 0h3m1 0h1m3 0h5m1 0h1m1 0h1m2 0h1m2 0h2m1 0h1m1 0h1m-39 1h1m1 0h1m1 0h1m1 0h2m1 0h2m1 0h2m2 0h1m2 0h1m1 0h1m14 0h1m2 0h1m1 0h1m1 0h1m-44 1h2m2 0h2m2 0h2m1 0h2m1 0h2m1 0h1m1 0h2m2 0h2m1 0h1m3 0h1m2 0h3m4 0h1m2 0h1m-43 1h1m6 0h1m1 0h3m3 0h4m2 0h1m2 0h1m1 0h3m1 0h2m2 0h1m1 0h1m1 0h2m1 0h2m-45 1h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h2m2 0h5m1 0h5m2 0h6m2 0h2m-39 1h4m1 0h1m4 0h1m2 0h4m4 0h1m7 0h1m2 0h1m2 0h1m4 0h1m1 0h1m-42 1h4m3 0h1m1 0h1m2 0h1m1 0h2m1 0h1m3 0h4m1 0h1m2 0h1m1 0h3m2 0h1m2 0h2m-44 1h1m1 0h1m1 0h2m2 0h1m1 0h4m8 0h1m4 0h2m1 0h3m1 0h2m2 0h3m-41 1h2m1 0h6m1 0h1m1 0h1m1 0h1m1 0h5m6 0h1m1 0h1m2 0h3m2 0h1m1 0h1m1 0h3m-44 1h1m1 0h2m1 0h1m1 0h5m3 0h1m1 0h4m3 0h1m1 0h2m1 0h1m1 0h1m3 0h1m2 0h1m2 0h1m1 0h1m-44 1h2m1 0h4m3 0h1m1 0h1m1 0h2m1 0h1m1 0h2m2 0h2m2 0h2m2 0h1m2 0h2m2 0h1m2 0h4m-45 1h2m1 0h3m4 0h1m2 0h1m1 0h1m2 0h2m2 0h2m1 0h2m5 0h3m1 0h1m2 0h2m-41 1h1m1 0h1m1 0h7m4 0h1m2 0h1m1 0h6m1 0h3m1 0h1m1 0h1m2 0h5m2 0h1m-42 1h1m1 0h1m3 0h1m7 0h1m1 0h3m3 0h2m1 0h1m4 0h1m3 0h1m3 0h1m2 0h2m-45 1h1m3 0h1m1 0h1m1 0h1m6 0h2m1 0h1m1 0h1m1 0h1m1 0h4m1 0h1m1 0h6m1 0h1m1 0h1m1 0h3m-45 1h1m1 0h1m1 0h1m3 0h3m1 0h1m4 0h1m1 0h2m3 0h7m3 0h1m1 0h1m3 0h2m1 0h2m-45 1h1m2 0h6m1 0h1m2 0h1m1 0h1m2 0h1m1 0h6m1 0h4m1 0h2m1 0h7m1 0h2m-45 1h2m2 0h1m3 0h1m2 0h2m6 0h3m1 0h3m1 0h2m3 0h1m1 0h1m1 0h1m1 0h1m1 0h1m3 0h1m-45 1h1m1 0h1m1 0h3m1 0h1m1 0h1m1 0h1m4 0h2m2 0h3m2 0h2m2 0h1m5 0h2m1 0h2m1 0h2m-44 1h4m5 0h1m3 0h1m1 0h4m4 0h1m1 0h4m5 0h1m1 0h4m1 0h1m-39 1h1m2 0h1m2 0h2m2 0h1m3 0h5m1 0h5m2 0h1m1 0h1m3 0h2m1 0h2m2 0h2m-45 1h3m1 0h2m3 0h9m1 0h1m2 0h3m1 0h4m1 0h2m4 0h1m5 0h1m-42 1h2m2 0h3m1 0h2m5 0h4m1 0h1m1 0h2m1 0h9m2 0h1m1 0h2m1 0h2m-45 1h4m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h6m1 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m1 0h3m3 0h1m-45 1h1m1 0h2m2 0h4m1 0h1m2 0h4m1 0h2m1 0h2m4 0h1m5 0h2m5 0h1m1 0h1m-44 1h1m3 0h1m2 0h2m1 0h3m4 0h2m1 0h1m1 0h1m1 0h1m3 0h1m3 0h1m2 0h1m-32 1h1m1 0h1m1 0h1m2 0h1m2 0h3m1 0h3m2 0h3m5 0h2m2 0h2m1 0h1m1 0h2m2 0h1m-44 1h4m2 0h1m1 0h1m2 0h2m1 0h3m1 0h2m2 0h1m1 0h4m4 0h1m1 0h1m1 0h2m2 0h1m1 0h2m-45 1h1m2 0h2m1 0h4m1 0h1m3 0h3m1 0h6m1 0h3m1 0h3m1 0h1m1 0h5m3 0h1m-37 1h3m1 0h9m3 0h1m2 0h1m3 0h1m1 0h2m1 0h1m3 0h1m3 0h1m-45 1h7m11 0h3m1 0h1m1 0h1m4 0h1m1 0h3m2 0h1m1 0h1m1 0h4m-44 1h1m5 0h1m1 0h1m1 0h3m2 0h1m2 0h3m3 0h1m1 0h4m1 0h1m1 0h1m2 0h1m3 0h1m3 0h1m-45 1h1m1 0h3m1 0h1m6 0h1m2 0h1m1 0h7m2 0h1m2 0h1m1 0h10m-42 1h1m1 0h3m1 0h1m1 0h1m2 0h1m3 0h1m1 0h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h2m2 0h8m-43 1h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h1m2 0h1m3 0h2m4 0h3m3 0h1m2 0h6m1 0h2m-45 1h1m5 0h1m2 0h1m2 0h1m1 0h2m1 0h4m3 0h1m2 0h1m2 0h1m1 0h3m2 0h1m1 0h1m1 0h1m-42 1h7m1 0h3m4 0h1m3 0h1m1 0h1m2 0h1m1 0h3m2 0h1m1 0h1m3 0h1m2 0h1m2 0h1"/></g></svg>
+            <div class="qr-note">Scan the QR code<br>or visit<br>sydney-cryptography-group.github.io</div>
+          </a>
+        </section>
+      </aside>
+
+      <section class="main">
+        <div class="group">Sydney Cryptography Group</div>
+        <div class="top-rule"></div>
+
+        <h1>2026 Sydney Uni Cryptography School</h1>
+        <p class="dek">Join us for a day of talks and discussion on the latest research in cryptography and theoretical computer science.</p>
+        <div class="section-rule"></div>
+
+        <section class="section" aria-label="Schedule">
+          <h2 class="section-title">Schedule</h2>
+          <div class="schedule">
+            <div class="schedule-row">
+              <div class="time">09:00 – 12:00</div>
+              <div>
+                <div class="session-name">Morning session</div>
+                <div class="session-detail">Algorithmic cryptography</div>
+              </div>
+            </div>
+            <div class="schedule-row">
+              <div class="time">12:00 – 13:30</div>
+              <div>
+                <div class="session-name">Lunch provided</div>
+              </div>
+            </div>
+            <div class="schedule-row">
+              <div class="time">13:30 – 16:30</div>
+              <div>
+                <div class="session-name">Afternoon session</div>
+                <div class="session-detail">Frontiers and foundations of future security</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section audience-block" aria-label="Audience">
+          <svg class="people-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M18 21a8 8 0 0 0-16 0"></path>
+            <circle cx="10" cy="8" r="5"></circle>
+            <path d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"></path>
+          </svg>
+          <div>
+            <div class="audience-heading">Audience</div>
+            <div class="body-copy">Everyone interested, especially 3rd- or 4th-year undergraduates and master's students interested in cryptography and TCS research</div>
+          </div>
+        </section>
+
+        <section class="section background-block" aria-label="Assumed knowledge">
+          <h2 class="section-title">Assumed knowledge</h2>
+          <p class="background-copy">Discrete maths; discrete probability; basics of number theory, data structures and algorithms, and computational complexity (computational models, Turing machines, and classes such as P and NP). Cryptography background is not required but is a plus.</p>
+        </section>
+
+        <section class="topics" aria-label="Topics">
+          <h2 class="section-title">Topics</h2>
+          <ul>
+            <li>Algorithmic cryptography</li>
+            <li>Frontiers and foundations of future security</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+    <script>
+      // Only dress this up as a standalone page when opened directly in a tab.
+      // When embedded in the activities page iframe it must stay pixel-exact.
+      if (window.self === window.top) {
+        document.documentElement.classList.add('standalone');
+      }
+    </script>
+  </body>
+</html>
