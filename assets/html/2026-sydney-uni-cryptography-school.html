@@ -381,11 +381,18 @@
          script scales the sheet down (via zoom) so the whole flyer fits the
          viewport instead of overflowing to a sliver of the left column.
          Relax the full-poster heights so no tall empty backdrop is left
-         below the scaled-down sheet. */
+         below the scaled-down sheet, and let the sheet grow to its content
+         (it still stays >= 1754px via the column min-heights). The fixed
+         height + overflow:hidden otherwise clips the last section once the
+         zoom-induced reflow pushes the content a hair past 1754px. */
       @media (max-width: 1240px) {
         html.standalone,
         html.standalone body {
           min-height: 0;
+        }
+
+        html.standalone .sheet {
+          height: auto;
         }
       }
 
