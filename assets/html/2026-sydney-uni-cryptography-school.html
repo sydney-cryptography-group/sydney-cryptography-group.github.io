@@ -377,6 +377,18 @@
         margin: 0;
       }
 
+      /* On screens narrower than the fixed 1240px poster, the standalone
+         script scales the sheet down (via zoom) so the whole flyer fits the
+         viewport instead of overflowing to a sliver of the left column.
+         Relax the full-poster heights so no tall empty backdrop is left
+         below the scaled-down sheet. */
+      @media (max-width: 1240px) {
+        html.standalone,
+        html.standalone body {
+          min-height: 0;
+        }
+      }
+
       @media print {
         html,
         body,
@@ -523,6 +535,18 @@
       // When embedded in the activities page iframe it must stay pixel-exact.
       if (window.self === window.top) {
         document.documentElement.classList.add('standalone');
+
+        // The poster is a fixed 1240px-wide design. On viewports narrower than
+        // that (phones, small windows) scale the whole sheet down to fit, so it
+        // shows the full flyer rather than overflowing to a narrow left column.
+        var sheet = document.querySelector('.sheet');
+        var fitSheet = function () {
+          var available = document.documentElement.clientWidth - 32; // body x-padding
+          var scale = Math.min(1, available / 1240);
+          sheet.style.zoom = scale < 1 ? scale : '';
+        };
+        fitSheet();
+        window.addEventListener('resize', fitSheet);
       }
     </script>
   </body>
