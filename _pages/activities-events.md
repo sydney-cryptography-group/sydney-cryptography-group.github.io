@@ -9,6 +9,10 @@ nav_order: 4
 
 ## Upcoming
 
+To be announced!
+
+## Past
+
 ### 2026 Sydney Uni Cryptography School
 
 **Friday 7 August 2026** &middot; J12 Boardroom 124, School of Computer Science, University of Sydney
@@ -16,12 +20,6 @@ nav_order: 4
 A day of talks and discussion on the latest research in cryptography and theoretical
 computer science, aimed at everyone interested — especially 3rd- and 4th-year
 undergraduates and master's students considering cryptography and TCS research.
-Attendance is **free**, but registration is required by **26 July 2026**.
-
-<a class="btn btn-primary z-depth-0" role="button" target="_blank" rel="noopener"
-   href="https://docs.google.com/forms/d/e/1FAIpQLSdYQfpjdq58rxhEx4TQpTmSbinAXioDHB9omPs4a7hiYMP8pg/viewform?usp=send_form">
-  Register now &rarr;
-</a>
 
 <style>
   .flyer-frame {
@@ -71,12 +69,3 @@ Attendance is **free**, but registration is required by **26 July 2026**.
     fit();
   })();
 </script>
-
-#### Register
-
-<iframe
-  title="2026 Sydney Uni Cryptography School registration form"
-  src="https://docs.google.com/forms/d/e/1FAIpQLSdYQfpjdq58rxhEx4TQpTmSbinAXioDHB9omPs4a7hiYMP8pg/viewform?embedded=true"
-  width="100%" height="3500" frameborder="0" marginheight="0" marginwidth="0" loading="lazy">
-  Loading the registration form&hellip;
-</iframe>

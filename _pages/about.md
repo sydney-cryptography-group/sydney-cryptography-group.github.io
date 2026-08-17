@@ -17,7 +17,7 @@ grants: true
 # Temporary event banner shown above the page title. Remove this block
 # (or set enabled: false) once the event has passed.
 event_banner:
-  enabled: true
+  enabled: false
   tag: NEW
   text: "Please check our August one-day event — 2026 Sydney Uni Cryptography School!"
   url: /activities-events/
